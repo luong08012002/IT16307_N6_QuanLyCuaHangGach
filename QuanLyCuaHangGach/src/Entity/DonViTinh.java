@@ -10,35 +10,35 @@ package Entity;
  * @author Administrator
  */
 public class DonViTinh {
-    private String maDonVi, tenDonVi;
+    private String maChatLieu, tenChatLieu;
 
     public DonViTinh() {
     }
 
-    public DonViTinh(String maDonVi, String tenDonVi) {
-        this.maDonVi = maDonVi;
-        this.tenDonVi = tenDonVi;
+    public DonViTinh(String maChatLieu, String tenChatLieu) {
+        this.maChatLieu = maChatLieu;
+        this.tenChatLieu = tenChatLieu;
     }
 
-    public String getMaDonVi() {
-        return maDonVi;
+    public String getMaChatLieu() {
+        return maChatLieu;
     }
 
-    public void setMaDonVi(String maDonVi) {
-        this.maDonVi = maDonVi;
+    public void setMaChatLieu(String maChatLieu) {
+        this.maChatLieu = maChatLieu;
     }
 
-    public String getTenDonVi() {
-        return tenDonVi;
+    public String getTenChatLieu() {
+        return tenChatLieu;
     }
 
-    public void setTenDonVi(String tenDonVi) {
-        this.tenDonVi = tenDonVi;
+    public void setTenChatLieu(String tenChatLieu) {
+        this.tenChatLieu = tenChatLieu;
     }
 
     @Override
     public String toString() {
-        return "DonViTinh{" + "maDonVi=" + maDonVi + ", tenDonVi=" + tenDonVi + '}';
+        return "DonViTinh{" + "maChatLieu=" + maChatLieu + ", tenChatLieu=" + tenChatLieu + '}';
     }
     
     

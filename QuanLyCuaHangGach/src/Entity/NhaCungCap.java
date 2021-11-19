@@ -48,11 +48,6 @@ public class NhaCungCap {
         return DiaChi;
     }
 
-    @Override
-    public String toString() {
-        return "NhaCungCap{" + "MaNhaCungCap=" + MaNhaCungCap + ", TenNhaCungCap=" + TenNhaCungCap + ", DiaChi=" + DiaChi + ", SDT=" + SDT + ", Email=" + Email + ", ThongTinKhac=" + ThongTinKhac + ", TrangThai=" + TrangThai + '}';
-    }
-
     public void setDiaChi(String DiaChi) {
         this.DiaChi = DiaChi;
     }
@@ -88,6 +83,4 @@ public class NhaCungCap {
     public void setTrangThai(boolean TrangThai) {
         this.TrangThai = TrangThai;
     }
-
-  
 }

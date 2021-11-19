@@ -9,13 +9,13 @@ package Entity;
  *
  * @author Administrator
  */
-public class DonViTinh {
+public class ChatLieu {
     private String maChatLieu, tenChatLieu;
 
-    public DonViTinh() {
+    public ChatLieu() {
     }
 
-    public DonViTinh(String maChatLieu, String tenChatLieu) {
+    public ChatLieu(String maChatLieu, String tenChatLieu) {
         this.maChatLieu = maChatLieu;
         this.tenChatLieu = tenChatLieu;
     }
@@ -38,7 +38,7 @@ public class DonViTinh {
 
     @Override
     public String toString() {
-        return "DonViTinh{" + "maChatLieu=" + maChatLieu + ", tenChatLieu=" + tenChatLieu + '}';
+        return "ChatLieu{" + "maChatLieu=" + maChatLieu + ", tenChatLieu=" + tenChatLieu + '}';
     }
     
     

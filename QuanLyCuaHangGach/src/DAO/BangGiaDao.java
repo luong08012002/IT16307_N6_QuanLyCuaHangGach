@@ -17,24 +17,24 @@ import java.util.ArrayList;
 public class BangGiaDao extends DAO<BangGia, String>{
     
     String SQL_Insert="insert into BANGGIA values(?,?,?) ";
-    String SQL_Update="update BANGGIA set MANHACUNGCAP=?,MAGACH=?,GIAGACH=?";
+    String SQL_Update="update BANGGIA set MAGACH=?,GIAGACH=?,MANHACUNGCAP=?";
     String SQL_Delete="delete from BANGGIA WHERE MAGACH =?";
     String SQL_SelectAll="select*from BANGGIA";
     String SQL_SelectID="select*from BANGGIA where MAGACH=?";
     
     @Override
     public void them(BangGia entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcHelper.update(SQL_Insert, entity.getMaGach(), entity.getGia(),entity.getMaNhaCungCap());
     }
 
     @Override
     public void capNhat(BangGia entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcHelper.update(SQL_Update, entity.getMaGach(), entity.getGia(),entity.getMaNhaCungCap());
     }
 
     @Override
     public void xoa(String key) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcHelper.update(SQL_Delete, key);
     }
 
     @Override

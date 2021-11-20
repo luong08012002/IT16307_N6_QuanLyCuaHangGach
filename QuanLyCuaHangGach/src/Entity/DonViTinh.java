@@ -27,11 +27,14 @@ public class DonViTinh {
 
     public void setTenDonVi(String tenDonVi) {
         this.tenDonVi = tenDonVi;
-      
+    }
+    
+    
     @Override
     public String toString() {
         return "DonViTinh{" + "maDonVi=" + maDonVi + ", tenDonVi=" + tenDonVi + '}';
     }
     
     
+
 }

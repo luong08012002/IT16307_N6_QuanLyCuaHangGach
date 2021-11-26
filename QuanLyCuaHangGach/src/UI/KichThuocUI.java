@@ -27,6 +27,7 @@ public class KichThuocUI extends javax.swing.JFrame {
     public KichThuocUI() {
         initComponents();
         init();
+        setLocationRelativeTo(null);
     }
     public void init(){
         setTitle("Quản lý kích thước gạch");
@@ -87,7 +88,7 @@ public class KichThuocUI extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Mã thể loại", "Tên thể loại"
+                "Mã kích thước", "Tên kích thước"
             }
         ));
         tblTL.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -162,6 +163,7 @@ public class KichThuocUI extends javax.swing.JFrame {
         if(evt.getClickCount() == 2){
             row = tblTL.getSelectedRow();
             setForm(daoKT.selectByID(tblTL.getValueAt(row, 0).toString()));
+            updateStatus();
         }
     }//GEN-LAST:event_tblTLMouseClicked
 
@@ -201,6 +203,13 @@ public class KichThuocUI extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(KichThuocUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -208,6 +217,10 @@ public class KichThuocUI extends javax.swing.JFrame {
                 new KichThuocUI().setVisible(true);
             }
         });
+    }
+    void updateStatus() {
+        boolean click = row >= 0;
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
